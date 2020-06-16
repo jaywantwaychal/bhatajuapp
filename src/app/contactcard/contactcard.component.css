@@ -1,0 +1,17 @@
+.contactuscard {
+    margin: 10px 10px 10px 10px;
+}
+
+.contactHeader {
+    padding-top: 10px;
+    background-color: lemonchiffon;
+}
+
+.contactTitle {
+    font-weight: 800;
+}
+
+.seperator {
+    height: 1px;
+    background-color: red;
+}

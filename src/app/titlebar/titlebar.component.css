@@ -1,0 +1,11 @@
+.logo {
+    padding: 0px 5px;
+    font-size: 20px;
+}
+
+.fixedTitle {
+    position: sticky;
+    position: -webkit-sticky;
+    top:0;
+    z-index: 1000;
+}

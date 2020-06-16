@@ -1,0 +1,40 @@
+<div class="contactuscard">
+    <div class="contactHeader" fxLayout="column" fxLayoutAlign="space-between center">
+        <h1 class="contactTitle">Contact Us</h1>
+        <h3>We connect you asap!!</h3>
+    </div>
+    <hr class="seperator">
+    <div>
+        <form #contactform="ngForm" [formGroup]="contactUsForm" fxLayout="column" fxLayoutWrap fxLayoutAlign="space-between"
+            (ngSubmit)="onSubmit()">
+
+            <hr />
+            <div formGroupName="name">
+                <mat-form-field>
+                    <mat-label>First Name</mat-label>
+                    <input matInput placeholder="firstName" formControlName="firstName">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Last Name</mat-label>
+                    <input matInput placeholder="lastName" formControlName="lastName">
+                </mat-form-field>
+            </div>
+
+            <mat-form-field>
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="email" formControlName="email">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Mobile Phone</mat-label>
+                <input matInput placeholder="phone" formControlName="phone">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Describe Inquiry</mat-label>
+                <textarea rows="5" cols="40" #message matInput placeholder="message" formControlName="message"></textarea>
+            </mat-form-field>
+            <div fxLayoutAlign="center">
+                <button [disabled]="!contactform.valid" mat-raised-button color="primary">Send Inquiry</button>
+            </div>
+        </form>
+    </div>
+</div>

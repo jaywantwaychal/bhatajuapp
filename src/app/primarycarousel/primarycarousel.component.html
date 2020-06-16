@@ -1,0 +1,19 @@
+<div class="premiumcards" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="space-between">
+  <mat-card *ngFor="let slide of slides" class="precard">
+      <mat-card-header>
+          <mat-card-title>Title</mat-card-title>
+          <mat-card-subtitle>Subtitle</mat-card-subtitle>
+      </mat-card-header>
+      <img matCardImage [src]="slide.src">
+      <mat-card-content>
+          Text content
+      </mat-card-content>
+      <mat-card-actions align="start">
+          <button mat-button (click)="someAction()">Action1</button>
+          
+      </mat-card-actions>
+      <mat-card-footer>
+          Footer
+      </mat-card-footer>
+  </mat-card>
+</div>

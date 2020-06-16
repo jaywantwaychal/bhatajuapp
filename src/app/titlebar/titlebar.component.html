@@ -1,0 +1,30 @@
+<mat-toolbar color="primary" class="fixedTitle">  
+    <mat-toolbar-row fxLayoutAlign="space-between center">
+      <div fxLayout="row">
+          <button mat-button>
+              <mat-icon>home</mat-icon>
+              <span class="logo">Hello Swamiji</span>
+          </button>
+          <div *ngIf="!deviceXs">
+            <button mat-button [routerLink]="['/home']" routerLinkActive="router-link-active">Home</button>
+            <button mat-button [routerLink]="['/horoscope']" routerLinkActive="router-link-active">Horoscope</button>
+            <button mat-button [routerLink]="['/puja']" routerLinkActive="router-link-active">Puja's</button>
+            <button mat-button [routerLink]="['/contactus']" routerLinkActive="router-link-active">Contact Us</button>
+            <button mat-button [routerLink]="['/aboutus']" routerLinkActive="router-link-active">About Us</button>
+            
+         </div>
+        </div>
+      <div *ngIf="deviceXs">
+        <button mat-icon-button [matMenuTriggerFor]="moreMenu">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+          <mat-menu #moreMenu="matMenu" xPosition="before">
+            <button mat-menu-item [routerLink]="['/home']" routerLinkActive="router-link-active">Home</button>
+            <button mat-menu-item [routerLink]="['/horoscope']" routerLinkActive="router-link-active">Horoscope</button>
+            <button mat-menu-item [routerLink]="['/puja']" routerLinkActive="router-link-active">Puja's</button>
+            <button mat-menu-item [routerLink]="['/contactus']" routerLinkActive="router-link-active">Contact Us</button>
+            <button mat-menu-item [routerLink]="['/aboutus']" routerLinkActive="router-link-active">About Us</button>
+          </mat-menu>
+      </div>
+    </mat-toolbar-row>  
+  </mat-toolbar>

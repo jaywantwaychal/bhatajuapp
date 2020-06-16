@@ -1,0 +1,34 @@
+<div>
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Search Here
+                </mat-panel-title>
+                <mat-panel-description>
+
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+
+            <form #searchFormValid [formGroup]="searchForm" (ngSubmit)="onSearch()" class="searchFormStyle"
+                fxLayout="row wrap">
+                <div>
+                    <mat-form-field>
+                        <input matInput placeholder="City" formControlName="city">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput placeholder="Area" formControlName="area">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput placeholder="Search Puja" formControlName="puja">
+                    </mat-form-field>
+                </div>
+                <div>
+                    <button mat-fab color="accent">
+                        <mat-icon>search</mat-icon>
+                    </button>
+                </div>
+            </form>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
