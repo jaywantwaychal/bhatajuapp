@@ -1,0 +1,86 @@
+<div *ngIf="deviceXs" fxLayout="column wrap">
+    <div class="heading">
+        <span>
+            <h2>Horoscope by Ask-Oracle</h2>
+        </span>
+    </div>
+    <div class="smallscreen">
+        <iframe class="responsive-iframe" src="https://www.ask-oracle.com/embed/"></iframe>
+    </div>
+    <div class="heading">
+        <span>
+            <h3>Connect with below list of Purohit's at your area to get more information on Horoscope, Panchang,
+                Lagna-kundali, Dosha's and many more...</h3>
+        </span>
+    </div>
+    <div>
+        <ol *ngFor="let card of cards" class="cards">
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title>Title</mat-card-title>
+                    <mat-card-subtitle>Subtitle</mat-card-subtitle>
+                </mat-card-header>
+                <img matCardImage src="">
+                <mat-card-content>
+                    Text content
+                </mat-card-content>
+                <mat-card-actions align="start">
+                    <button mat-button>Action1</button>
+
+                </mat-card-actions>
+                <mat-card-footer>
+                    Footer
+                </mat-card-footer>
+            </mat-card>
+        </ol>
+    </div>
+</div>
+
+<div *ngIf="!deviceXs" fxLayout="row" fxLayoutAlign="space-between center">
+    <div class="heading">
+        <span>
+            <h2>Horoscope by Ask-Oracle</h2>
+        </span>
+    </div>
+    <div class="mainheading" fxLayout="column" fxLayoutAlign="space-between center">
+        <span >
+            <h2>A Platform to understand your day !!!</h2>
+        </span>
+        <span>
+            <h3><u>Connect with below list of Purohit's at your area to get more information on Horoscope, Panchang,
+                Lagna-kundali, Dosha's and many more...</u></h3>
+        </span>
+    </div>
+</div>
+<div fxLayoutAlign="space-between stretch" class="around">
+
+    <div>
+        <iframe class="responsive-iframe-bigscreen" src="https://www.ask-oracle.com/embed/"></iframe>
+    </div>
+    <div>
+        <div fxLayout="wrap row">
+            <ol *ngFor="let card of cards">
+                <mat-card class="example-card matCard">
+                    <mat-card-header>
+                        <mat-card-title>Maha Ganapati</mat-card-title>
+                        <mat-card-subtitle>RanjanGaon</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image [src]="card.src" alt="">
+                    <mat-card-content>
+                        <p>
+                            Ranjangaon Ganpati is one among the Ashtavinayak, celebrating eight instances of legends
+                            related to
+                            Ganesha. This temple's Ganpati idol was inaugurated and donated by the "Khollam" family, a
+                            goldsmith
+                            family based in Ranjangaon. The temple was built between the 9th and 10th century.
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button mat-button>LIKE</button>
+                        <button mat-button>SHARE</button>
+                    </mat-card-actions>
+                </mat-card>
+            </ol>
+        </div>
+    </div>
+</div>

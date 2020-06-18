@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +20,12 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ContactcardComponent } from './contactcard/contactcard.component';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { KnowAstavinayakComponent } from './know-astavinayak/know-astavinayak.component';
+import { LoginComponent } from './login/login.component';
+import { FooterComponent } from './footer/footer.component';
+import { HoroscopeComponent } from './horoscope/horoscope.component';
 
 @NgModule({
   declarations: [
@@ -30,11 +36,15 @@ import { MatExpansionModule } from '@angular/material/expansion';
     AboutusComponent,
     ContactusComponent,
     HomepageComponent,
-    ContactcardComponent
+    ContactcardComponent,
+    KnowAstavinayakComponent,
+    LoginComponent,
+    FooterComponent,
+    HoroscopeComponent
   ],
   imports: [
     BrowserModule, ReactiveFormsModule,
-    AppRoutingModule,
+    AppRoutingModule, MatGridListModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatCardModule,
@@ -43,7 +53,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatIconModule,
     MatInputModule,
     MatMenuModule,
-    MatExpansionModule
+    MatExpansionModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

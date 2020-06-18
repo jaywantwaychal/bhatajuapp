@@ -17,6 +17,7 @@ export class AppComponent implements OnInit, OnDestroy{
 
   }
   ngOnInit(): void {
+    document.body.style.background = '#ffebeb';
     this.mediaSub = this.mediaObserver.media$.subscribe((result: MediaChange)=>{
       this.deviceXs = result.mqAlias === 'xs' ? true : false;
     })

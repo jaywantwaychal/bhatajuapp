@@ -1,3 +1,35 @@
 <app-searchbar></app-searchbar>
+<div fxLayout="column wrap" fxLayoutAlign="space-between center">
+          <span><h1 class="heading">{{headingMessage | uppercase }}</h1></span>
+          <span><h3 class="subheading">{{headingSubMessage | uppercase }}</h3></span>
+ </div>
 
-<app-primarycarousel [slides]="slides"></app-primarycarousel>
+<div fxLayoutAlign="space-between stretch">
+  <div class="god" *ngIf="!deviceXs">
+    <app-primarycarousel [deviceXs]="deviceXs" [slides1]="slides1"></app-primarycarousel>
+  </div>
+  <div>
+    <div fxLayout="wrap row">
+      <ol *ngFor="let card of cards">
+        <mat-card class="example-card" class="matCard">
+          <mat-card-header>
+            <mat-card-title>Maha Ganapati</mat-card-title>
+            <mat-card-subtitle>RanjanGaon</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image [src]="card.src" alt="">
+          <mat-card-content>
+            <p>
+              Ranjangaon Ganpati is one among the Ashtavinayak, celebrating eight instances of legends related to
+              Ganesha. This temple's Ganpati idol was inaugurated and donated by the "Khollam" family, a goldsmith
+              family based in Ranjangaon. The temple was built between the 9th and 10th century.
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+          </mat-card-actions>
+        </mat-card>
+      </ol>
+    </div>
+  </div>
+</div>

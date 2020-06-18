@@ -1,0 +1,37 @@
+.god {
+    margin-top:10px;
+    margin-left: 10px;
+    
+    height: 390px;
+    max-height: 390px;
+    width:250px; /* or whatever width you want. */
+    max-width:250px; /* or whatever width you want. */
+    display: inline-block;
+}
+
+.matCard {
+    max-width: 350px;
+    margin-right: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,1), 
+                0 1px 1px 0 rgba(0,0,0,1), 
+                0 1px 5px 0 rgba(0,0,0,1);
+}
+
+.example-card {
+    max-width: 350px;
+  }
+  
+  .heading {
+    font-weight: 800;
+    color: coral;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0 2px 1px -1px red, 
+                0 1px 1px 0 red, 
+                0 1px 10px 0 red;
+  }
+
+  .layoutClass {
+      margin: 15px auto;
+  }

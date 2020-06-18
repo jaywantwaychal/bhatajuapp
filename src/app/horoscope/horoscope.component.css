@@ -1,0 +1,141 @@
+/*.horoscopedata {
+    height: 90%;
+    width: 99%;
+    border: 2px solid red;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0 2px 1px -1px red, 
+                0 1px 1px 0 red, 
+                0 1px 10px 0 red;
+    
+}
+
+.grid {
+    margin: 20px 10px 10px 10px;
+    height: 100%;
+    width: 100%;
+}*/
+
+.horoscopeContainer {
+    
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+.horoscopeframe {
+   
+    width: 450px;
+    height: 90%;
+}
+
+.responsive-iframe {
+    position: relative;
+    height: 100%;
+    border: none;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .responsive-iframe-bigscreen {
+    position: relative;
+    height: 100%;
+    border: none;
+    width: 350px;
+    overflow: hidden;
+    margin: 20px auto;     
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,1), 
+                0 1px 1px 0 rgba(0,0,0,1), 
+                0 1px 5px 0 rgba(0,0,0,1);
+                border-radius: 5px;
+                background-color:  cornsilk;
+  }
+ 
+.smallscreen {
+    position: relative;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,1), 
+                0 1px 1px 0 rgba(0,0,0,1), 
+                0 1px 5px 0 rgba(0,0,0,1);
+                width:90%;
+                padding: 10px;
+                height: 250px;
+                border-radius: 5px;
+                background-color:  cornsilk;
+    margin: 30px auto;            
+                
+
+}
+
+.bigscreen {
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,1), 
+                0 1px 1px 0 rgba(0,0,0,1), 
+                0 1px 5px 0 rgba(0,0,0,1);
+                width:30%;
+                padding: 10px;
+                height: 80%;
+                border-radius: 5px;
+                background-color:  cornsilk;
+    margin: 20px auto;            
+                
+
+}
+
+.bigscreenStyle {
+    width:100%;
+    padding: 10px;
+    margin: 20px auto; 
+}
+
+.cards {
+    position: relative;
+      width:90%;
+                padding: 10px;
+                height: 250px;
+                border-radius: 5px;
+               
+    margin: 20px auto;
+}
+
+.god {
+    margin-top:10px;
+    margin-left: 10px;
+   
+   
+}
+
+
+.matCard {
+    max-width: 350px;
+    margin: 20px 10px 10px 10px;
+    padding: 20px;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,1), 
+                0 1px 1px 0 rgba(0,0,0,1), 
+                0 1px 5px 0 rgba(0,0,0,1);
+             justify-self: center ;
+}
+
+.example-card {
+    max-width: 350px;
+  }
+
+  
+  .around {
+    margin: 20px 10px 10px 10px;
+  }
+
+  .heading {
+    font-weight: 800;
+    color: coral;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0 2px 1px -1px red, 
+                0 1px 1px 0 red, 
+                0 1px 10px 0 red;
+  }
+
+  h2 {
+    margin: 10px 10px 10px 10px;
+  }
+
+  .mainheading {
+    margin: 10px auto;
+  }
